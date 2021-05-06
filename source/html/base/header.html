@@ -1,4 +1,4 @@
-<header class="header @@if (context.mod) { header--@@mod }">
+<!-- <header class="header @@if (context.mod) { header--@@mod }">
   <div class="header__wrapper">
     <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
       Логотип
@@ -25,4 +25,46 @@
       </div>
     </nav>
   </div>
-</header>
+</header> -->
+<div class="container">
+  <header class="header">
+    <a href="#" class="header__logo" aria-label="Переход на главную">
+      <svg class="header__logo-svg" width="134" height="50" viewBox="0 0 134 52">
+        <use xlink:href="#logo-desktop"></use>
+      </svg>
+    </a>
+    <div class="header__content">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">КВЕСТЫ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">НОВИЧКАМ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">ОТЗЫВЫ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">АКЦИИ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <div class="header__location-wrapper">
+          <svg class="header__location-icon" width="16" height="21" viewBox="0 0 11 14">
+            <use xlink:href="#icon-location"></use>
+          </svg>
+          <a class="header__location" href="#" aria-label="Выбрать город">НОВОСИБИРСК</a>
+        </div>
+
+
+
+        <a class="header__link" href="tel:+83832840160">8 (383) 284 01 60</a>
+      </div>
+    </div>
+  </header>
+</div>

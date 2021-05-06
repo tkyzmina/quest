@@ -1,36 +1,87 @@
 .header {
   display: flex;
-  align-items: center;
-  min-height: 100px;
-  padding: 0 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 24px;
 
-  background-color: $color-blue;
-
-  &__wrapper {
+  &__content {
+    padding-top: 14px;
     display: flex;
-    align-items: center;
   }
 
-  a,
-  p {
-    color: $color-white;
+  &__nav {
+    margin-right: 114px;
   }
 
-  ul {
+  &__list {
     display: flex;
     margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
     padding: 0;
-
     list-style: none;
+  }
 
-    li {
-      margin-right: 20px;
+  &__item {
+    margin-right: 48px;
+
+    &:last-of-type {
+      margin-right: 0;
     }
   }
 
-  .main-nav__toggle {
-    display: none;
+
+  &__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $color-white-smoke;
+    transition: color $default-transition-settings;
+
+    &:hover,
+    &:focus {
+      color: $color-tangerine;
+    }
+
+    &:active {
+      color: lighten($color-tangerine, 20%);
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    margin-right: 8px;
+  }
+
+  &__location-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 24px;
+  }
+
+  &__location {
+    padding-bottom: 2px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: $color-tangerine;
+    border-bottom: 1px dashed transparent;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px dashed $color-tangerine;
+    }
+
+    &:active {
+      color: lighten($color-tangerine, 20%);
+    }
+  }
+
+  &__location-icon {
+
+    margin-right: 8px;
+    fill: $color-tangerine;
   }
 }
