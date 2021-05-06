@@ -658,6 +658,47 @@ button,
     height: 100%;
     width: 100%; }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px; }
+  .footer__socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer__link {
+    position: relative;
+    display: block;
+    margin-right: 4px;
+    width: 30px;
+    height: 30px; }
+    .footer__link::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 28px;
+      height: 28px; }
+    .footer__link--insta::before {
+      background-image: url("../img/content/instagram-default.png");
+      -webkit-transition: background-image 0.3s ease;
+      transition: background-image 0.3s ease; }
+    .footer__link--insta:hover::before {
+      background-image: url("../img/content/instagram-hover.png"); }
+    .footer__link--vk::before {
+      background-image: url("../img/content/vk-default.png");
+      -webkit-transition: background-image 0.3s ease;
+      transition: background-image 0.3s ease; }
+    .footer__link--vk:hover::before {
+      background-image: url("../img/content/vk-hover.png"); }
+
 .modal {
   position: fixed;
   top: 0;
