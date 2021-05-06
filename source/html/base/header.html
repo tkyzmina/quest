@@ -26,6 +26,18 @@
     </nav>
   </div>
 </header> -->
+
+<div class="main-bg">
+  <picture>
+    <source type="image/webp" media="(max-width: 767px)"
+      srcset="img/bg/main-bg-mobile@1x.webp 1x, img/bg/main-bg-mobile@2x.webp 2x">
+    <source type="image/webp" srcset="img/bg/main-bg@1x.webp, img/bg/main-bg@2x.webp 2x">
+    <source media="(max-width: 767px)" srcset="img/bg/main-bg-mobile@1x.png 1x, img/bg/main-bg-mobile@2x.png 2x">
+    <img class="main-bg__image" src="img/bg/main-bg@1x.png" alt="Изображение людей в заброшенном здании"
+      srcset="img/bg/main-bg@2x.png 2x">
+  </picture>
+</div>
+
 <div class="container">
   <header class="header">
     <a href="#" class="header__logo" aria-label="Переход на главную">
@@ -60,9 +72,6 @@
           </svg>
           <a class="header__location" href="#" aria-label="Выбрать город">НОВОСИБИРСК</a>
         </div>
-
-
-
         <a class="header__link" href="tel:+83832840160">8 (383) 284 01 60</a>
       </div>
     </div>
