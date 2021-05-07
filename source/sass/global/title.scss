@@ -1,0 +1,13 @@
+.title {
+  margin: 0;
+  font-family: $font-family--main;
+  font-style: normal;
+  color: $color-default-white;
+
+  &--lg {
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 110%;
+    font-weight: 800;
+  }
+}

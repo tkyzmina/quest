@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  padding: 22px 52px 23px;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  background-color: $color-tangerine;
+  border: none;
+  border-radius: 65px;
+  transition: background-color $default-transition-settings;
+
+  &:hover,
+  &:focus {
+    background-color: $color-carrot-orange;
+  }
+
+  &:active {
+    background-color: $color-tangerine;
+  }
+}

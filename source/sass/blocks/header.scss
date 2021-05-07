@@ -53,6 +53,10 @@
     &:active {
       color: lighten($color-tangerine, 20%);
     }
+
+    &--active {
+      color: $color-tangerine;
+    }
   }
 
   &__contacts {

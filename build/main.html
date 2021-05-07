@@ -11,7 +11,7 @@
 <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
 <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
 
-<!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
 <link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
 <link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
@@ -20,7 +20,8 @@
 <meta content="#ffffff" name="msapplication-TileColor">
 <meta content="favicon/browserconfig.xml" name="msapplication-config">
 <meta content="#ffffff" name="theme-color">
- -->
+
+
 
 <!-- используйте только для шрифта находящегося на первом экране -->
 
@@ -28,7 +29,7 @@
 
 <link rel="stylesheet" href="css/style.min.css">
 
-  <title>ProjectName — Главная</title>
+  <title>Escape room — Главная</title>
 
 </head>
 
@@ -87,7 +88,7 @@
   <path fill="#fff" stroke="#fff" stroke-width=".25" d="M9.3 3.39h0a.4.4 0 000 .4c.07.1.18.2.34.2h2.81v2.34a1.89 1.89 0 00-.68-.14 2.03 2.03 0 000 4.07c.24 0 .47-.06.69-.15v2.35H3.98V9.63a.4.4 0 00-.2-.34.4.4 0 00-.4-.01h0a1.23 1.23 0 01-1.85-1.06A1.23 1.23 0 013.4 7.15h0a.4.4 0 00.39-.02.4.4 0 00.2-.33V4h2.82a.4.4 0 00.34-.2.4.4 0 000-.4h0a1.23 1.23 0 011.07-1.85A1.23 1.23 0 019.3 3.4zM8.22.75A2.03 2.03 0 006.24 3.2H3.6a.4.4 0 00-.28.12.4.4 0 00-.12.28v2.64a2.03 2.03 0 10-.42 4.01c.15 0 .29-.01.42-.04v2.64c0 .11.05.21.12.28a.4.4 0 00.28.12h9.25c.11 0 .21-.05.28-.12a.4.4 0 00.12-.28V9.44a.4.4 0 00-.23-.36.4.4 0 00-.43.07c-.22.2-.51.31-.82.31-.7 0-1.24-.55-1.24-1.24 0-.68.55-1.23 1.24-1.23.31 0 .6.11.82.31.11.1.28.13.42.07a.4.4 0 00.24-.36V3.6a.4.4 0 00-.12-.28.4.4 0 00-.28-.12h-2.64A2.03 2.03 0 008.23.75z"/>
 </symbol><symbol id="icon-star" viewBox="0 0 14 14">
   
-  <path fill="#fff" fill-rule="evenodd" d="M7 1L5.33 5.8H1l3.67 3.09L3.33 13 7 10.26 10.67 13 9.33 8.89 13 5.8H8.67L7 1z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M7 1L5.33 5.8H1l3.67 3.09L3.33 13 7 10.26 10.67 13 9.33 8.89 13 5.8H8.67L7 1z" clip-rule="evenodd"/>
 </symbol><symbol id="icon-user" viewBox="0 0 11 14">
   
   <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M7.52 8.92h.84c.94 0 1.86.71 1.7 1.63l-.16.86c-.24 1.01-.77 1.63-1.71 1.71H2.82c-.94-.08-1.45-.85-1.7-1.7l-.17-.87c-.21-.89.76-1.63 1.7-1.63h.81m-.85-5.11c-.2 0-.38.16-.38.37v.73c0 .2.17.37.38.37 0 0 .58 1.46.96 2.01.24.34.58 1.16 1.93 1.16s1.69-.82 1.93-1.16c.38-.55.96-2.01.96-2.01.21 0 .38-.17.38-.37v-.73c0-.2-.17-.37-.38-.37v-.55C8.39 1.98 7.63.88 5.5.88c-2.12 0-2.89 1.1-2.89 2.38v.55z"/>
@@ -117,6 +118,28 @@
   </div>
 
   <div class="wrapper">
+    <div class="main-bg">
+  <picture>
+    <source type="image/webp" media="(max-width: 767px)" srcset="img/bg/main-bg-mobile@1x.webp 1x, img/bg/main-bg-mobile@2x.webp 2x">
+    <source type="image/webp" srcset="img/bg/main-bg@1x.webp, img/bg/main-bg@2x.webp 2x">
+    <source media="(max-width: 767px)" srcset="img/bg/main-bg-mobile@1x.png 1x, img/bg/main-bg-mobile@2x.png 2x">
+    <img class="main-bg__image" src="img/bg/main-bg@1x.png" alt="Изображение людей в заброшенном здании" srcset="img/bg/main-bg@2x.png 2x">
+  </picture>
+</div>
+
+
+
+<!-- <div class="main-bg">
+  <picture>
+    <source type="image/webp" media="(max-width: 767px)"
+      srcset="img/bg/main-bg-mobile@1x.webp 1x, img/bg/main-bg-mobile@2x.webp 2x">
+    <source type="image/webp" srcset="img/bg/main-bg@1x.webp, img/bg/main-bg@2x.webp 2x">
+    <source media="(max-width: 767px)" srcset="img/bg/main-bg-mobile@1x.png 1x, img/bg/main-bg-mobile@2x.png 2x">
+    <img class="main-bg__image" src="img/bg/main-bg@1x.png" alt="Изображение людей в заброшенном здании"
+      srcset="img/bg/main-bg@2x.png 2x">
+  </picture>
+</div> -->
+
     <!-- <header class="header ">
   <div class="header__wrapper">
     <a class="header__logo"  aria-label="Переход на главную">
@@ -146,7 +169,7 @@
   </div>
 </header> -->
 
-<div class="main-bg">
+<!-- <div class="main-bg">
   <picture>
     <source type="image/webp" media="(max-width: 767px)"
       srcset="img/bg/main-bg-mobile@1x.webp 1x, img/bg/main-bg-mobile@2x.webp 2x">
@@ -155,11 +178,11 @@
     <img class="main-bg__image" src="img/bg/main-bg@1x.png" alt="Изображение людей в заброшенном здании"
       srcset="img/bg/main-bg@2x.png 2x">
   </picture>
-</div>
+</div> -->
 
 <div class="container">
   <header class="header">
-    <a href="#" class="header__logo" aria-label="Переход на главную">
+    <a class="header__logo"  aria-label="Переход на главную">
       <svg class="header__logo-svg" width="134" height="50" viewBox="0 0 134 52">
         <use xlink:href="#logo-desktop"></use>
       </svg>
@@ -168,19 +191,24 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="#">КВЕСТЫ</a>
+            <a class="header__link "
+              href="#">КВЕСТЫ</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">НОВИЧКАМ</a>
+            <a class="header__link  "
+              href="#">НОВИЧКАМ</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">ОТЗЫВЫ</a>
+            <a class="header__link "
+              href="#">ОТЗЫВЫ</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">АКЦИИ</a>
+            <a class="header__link "
+              href="#">АКЦИИ</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#">КОНТАКТЫ</a>
+            <a class="header__link "
+              href="#">КОНТАКТЫ</a>
           </li>
         </ul>
       </nav>
@@ -200,6 +228,19 @@
 
     <main>
       <div class="container">
+        <div class="layout layout--main">
+          <section class="intro">
+            <div class="intro__content">
+              <h1 class="title title--lg">Лучшие квесты
+                в&nbsp;Новосибирске</h1>
+              <p class="intro__text">Надоело проводить свободное время лёжа на&nbsp;диване? Игровые площадки questroom
+                на&nbsp;целый час погружают вас в&nbsp;мир незабываемых авантюр. Ищите подсказки, решайте головоломки
+                и&nbsp;находите выход из&nbsp;комнаты!</p>
+              <a class="btn btn-lg btn-primary" href="#">ВЫБРАТЬ КВЕСТ</a>
+            </div>
+
+          </section>
+        </div>
 
 
         <!-- <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
@@ -212,7 +253,7 @@
     <a class="footer__link footer__link--insta" href="#" aria-label="Escape room в Инстаграмм"></a>
     <a class="footer__link footer__link--vk" href="#" aria-label="Escape room в Контакте"></a>
   </div>
-  <a href="#" data-modal="question">Задать вопрос</a>
+  <a class="footer__question" href="#" data-modal="question"><span>?</span>Задать вопрос</a>
 </footer>
 
 
