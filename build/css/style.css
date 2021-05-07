@@ -857,6 +857,7 @@ button,
 
 .card {
   width: calc(100% / 3 - 24px);
+  min-width: 328px;
   position: relative;
   margin: 0 12px 32px;
   cursor: pointer; }
@@ -868,8 +869,7 @@ button,
     z-index: -1; }
   .card__img {
     position: relative;
-    padding-bottom: 67.44186%;
-    border-radius: 3px; }
+    padding-bottom: 67.44186%; }
     .card__img img {
       position: absolute;
       top: 0;
@@ -877,7 +877,8 @@ button,
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      border-radius: 3px; }
   .card__title {
     margin: 0;
     margin-bottom: 9px;
@@ -974,6 +975,50 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -12px; }
+
+.filter {
+  padding-top: 40px;
+  margin-bottom: 40px; }
+  .filter__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #f2890f; }
+  .filter .title {
+    margin-bottom: 48px; }
+  .filter__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .filter__item {
+    padding: 5px 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.32); }
+    .filter__item:first-of-type {
+      padding-left: 0; }
+    .filter__item:last-of-type {
+      padding-right: 0;
+      border: none; }
+  .filter__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .filter__label:hover > .filter__label-text {
+      border-bottom: 2px solid #f2890f; }
+  .filter__label-text {
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease; }
+  .filter__icon {
+    margin-right: 12px; }
+  .filter__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0); }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,

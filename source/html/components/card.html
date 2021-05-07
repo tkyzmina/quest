@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card__img-wrapper">
+    <div class="card__img">
+      <img src="@@img1" alt="" srcset="@@img1-2 2x" width="344" height="232">
+    </div>
+  </div>
+  <a class="card__content">
+    @@if (context.label){
+    <div class="card__label">
+      <svg class="card__icon card__icon--primary" width="16" height="16" viewbox="0 0 16 16">
+        <use xlink:href="#icon-star"></use>
+      </svg>
+      <span class="card__label-text">Хит</span>
+    </div>}
+    <div class="card__info">
+      <h3 class="card__title">@@title</h3>
+      <div class="card__spec">
+        <svg class="card__icon card__icon--primary" width="16" height="16" viewbox="0 0 16 16">
+          <use xlink:href="#icon-location"></use>
+        </svg>
+        <p class="card__text">@@address</p>
+      </div>
+      <div class="card__bottom">
+        <div class="card__spec">
+          <svg class="card__icon" width="16" height="16" viewbox="0 0 16 16">
+            <use xlink:href="#icon-user"></use>
+          </svg>
+          <p class="card__text">@@persons</p>
+        </div>
+        <div class="card__spec">
+          <svg class="card__icon" width="16" height="16" viewbox="0 0 16 16">
+            <use xlink:href="#icon-puzzle"></use>
+          </svg>
+          <p class="card__text">@@level</p>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
