@@ -1158,6 +1158,13 @@ button,
   .card:hover {
     -webkit-filter: drop-shadow(2px 2px 24px rgba(141, 80, 8, 0.12));
             filter: drop-shadow(2px 2px 24px rgba(141, 80, 8, 0.12)); }
+  @media (max-width: 1320px) {
+    .card {
+      width: calc(100% / 2 - 24px); } }
+  @media (max-width: 711px) {
+    .card {
+      min-width: 288px;
+      width: calc(100% - 24px); } }
   .card__img-wrapper {
     width: 100%;
     z-index: -1; }
@@ -1272,7 +1279,20 @@ button,
 
 .filter {
   padding-top: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  position: relative; }
+  .filter::after {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, right top, left top, from(#1c1b1b), to(rgba(28, 27, 27, 0)));
+    background: linear-gradient(270deg, #1c1b1b 0%, rgba(28, 27, 27, 0) 100%);
+    pointer-events: none; }
+  .filter ::-webkit-scrollbar {
+    display: none; }
   .filter__subtitle {
     margin: 0;
     margin-bottom: 10px;
@@ -1282,22 +1302,40 @@ button,
   .filter__list {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    position: relative; }
+    @media (max-width: 1439px) {
+      .filter__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-right: -20px;
+        width: 100%; } }
   .filter__item {
     padding: 5px 40px;
     border-right: 1px solid rgba(255, 255, 255, 0.32); }
     .filter__item:first-of-type {
       padding-left: 0; }
     .filter__item:last-of-type {
-      padding-right: 0;
+      padding-right: 100px;
       border: none; }
+    @media (max-width: 767px) {
+      .filter__item {
+        padding: 5px 16px; } }
   .filter__label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    cursor: pointer; }
     .filter__label:hover > .filter__label-text {
       border-bottom: 2px solid #f2890f; }
   .filter__label-text {

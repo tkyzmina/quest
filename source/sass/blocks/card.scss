@@ -9,6 +9,15 @@
     filter: drop-shadow(2px 2px 24px rgba(141, 80, 8, 0.12));
   }
 
+  @media (max-width: 1320px) {
+    width: calc(100% / 2 - 24px);
+  }
+
+  @media (max-width: 711px) {
+    min-width: 288px;
+    width: calc(100% - 24px);
+  }
+
   &__img-wrapper {
     width: 100%;
     z-index: -1;
