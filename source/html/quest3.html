@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include("source/html/base/head.html")
+  <title>Escape room — МАНЬЯК</title>
+</head>
+
+<body>
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+  <div class="wrapper">
+    @@include("source/html/components/bg.html", {
+    "img1x": "img/content/quest/quest3@1x.jpg",
+    "img2x": "img/content/quest/quest3@2x.jpg",
+    "img1x-mobile": "img/content/quest/quest3-mob@1x.jpg",
+    "img2x-mobile": "img/content/quest/quest3-mob@2x.jpg",
+    "img1x-webp": "img/content/quest/quest3@1x.webp",
+    "img2x-webp": "img/content/quest/quest3@2x.webp",
+    "img1x-mobile-webp": "img/content/quest/quest3-mob@1x.webp",
+    "img2x-mobile-webp": "img/content/quest/quest3-mob@2x.webp",
+    "alt":"Изображение человека в маске"
+    })
+
+    @@include("source/html/base/header.html", {
+    "main": false,
+    })
+    <main>
+
+    </main>
+    @@include("source/html/base/footer.html")
+  </div>
+
+</body>
+
+</html>

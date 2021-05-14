@@ -4,11 +4,17 @@
   align-items: center;
   padding-bottom: 20px;
 
-  &__socials {
+  @include viewport--md {
+    display: none;
+  }
+
+  &__socials,
+  .header__socials {
     display: flex;
   }
 
-  &__link {
+  &__link,
+  .header__link {
     position: relative;
     display: block;
     margin-right: 4px;
@@ -24,7 +30,8 @@
       height: 28px;
     }
 
-    &--insta {
+    &--insta,
+    .header__link--insta {
       &::before {
         background-image: url("../img/content/instagram-default.png");
         transition: background-image $default-transition-settings;
@@ -37,7 +44,8 @@
       }
     }
 
-    &--vk {
+    &--vk,
+    .header__link--vk {
       &::before {
         background-image: url("../img/content/vk-default.png");
         transition: background-image $default-transition-settings;
@@ -81,5 +89,10 @@
   &--main {
     padding-left: 104px;
     padding-right: 121px;
+
+    @include viewport--md {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

@@ -17,8 +17,8 @@
       line-height: 28px;
     }
 
-    a {
-      color: rgb(10, 10, 175);
+    .index a {
+      color: white;
     }
 
     li {
@@ -54,10 +54,17 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
 
-  <main>
+  <main class="index">
     <div class="container">
-      <img src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта">
+      <a class="header__logo" @@if (!context.main) { href="main.html" } aria-label="Переход на главную">
+        <svg class="header__logo-svg" width="134" height="50" viewBox="0 0 134 52">
+          <use xlink:href="#logo-desktop"></use>
+        </svg>
+      </a>
       <h1>Список страниц и компонентов</h1>
       <ol>
         <li>
@@ -67,11 +74,21 @@
           <a href="main.html">Главная — main.html</a>
         </li>
         <li>
-          <a href="choose.html">Выберите квест— choose.html</a>
+          <a href="choose.html">Выберите квест — choose.html</a>
         </li>
         <li>
-          <a href="#">Название страницы (состояние страницы, если отдельное) — ссылка на страницу</a>
+          <a href="quest1.html">Квест Маньяк - quest1.html</a>
         </li>
+        <li>
+          <a href="quest2.html">Квест Тайны старого особняка - quest2.html</a>
+        </li>
+        <li>
+          <a href="quest3.html">Квест Ритуал - quest3.html</a>
+        </li>
+        <li>
+          <a href="quest4.html">Квест Фатальный эксперимент - quest4.html</a>
+        </li>
+
       </ol>
     </div>
   </main>
